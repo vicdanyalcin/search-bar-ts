@@ -1,55 +1,55 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
-
+import React from "react";
+import { Counter } from "./features/counter/Counter";
+import "./App.css";
+const data = [
+  {
+    projectName: "Green forests of Bahamas",
+    description: "Description of Green forests",
+  },
+  {
+    projectName: "Green seagrass of Bahamas",
+    description: "Description of Green seagrass",
+  },
+  {
+    projectName: "Reforestation of Brazil",
+    description: "Description of Reforestation",
+  },
+  {
+    projectName: "Blue ocean of Atlantico",
+    description: "Description of Blue Ocean",
+  },
+  {
+    projectName: "Blue seagrass of Bahamas",
+    description: "Description of Blue seagrass",
+  },
+];
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
+        <div class="container">
+          <div class="wrapper">
+            <div class="arrow-steps clearfix">
+              <div class="step current">
+                <span> Step 1</span>
+              </div>
+              <div class="step">
+                <span>Step 2 some words</span>{" "}
+              </div>
+              <div class="step">
+                <span> Step 3</span>{" "}
+              </div>
+            </div>
+            <div class="nav clearfix">
+              <a href="#" class="prev">
+                Previous
+              </a>
+              <a href="#" class="next pull-right">
+                Next
+              </a>
+            </div>
+          </div>
+        </div>
       </header>
     </div>
   );
